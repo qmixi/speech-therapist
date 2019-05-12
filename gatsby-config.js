@@ -8,6 +8,15 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: 'gatsby-source-graphql',
+      options: {
+        typeName: 'THERAPIST',
+        fieldName: 'therapist',
+        url:
+          'https://api-euwest.graphcms.com/v1/cjvk080h05k3m01ghmxba8rvx/master',
+      },
+    },
+    {
       resolve: 'gatsby-plugin-root-import',
       options: {
         assets: path.join(__dirname, 'src/assets'),
@@ -26,11 +35,13 @@ module.exports = {
     },
     {
       resolve: 'gatsby-plugin-eslint',
-      test: /\.js$/,
-      exclude: /(node_modules|cache|public)/,
       options: {
-        emitWarning: true,
-        failOnError: false,
+        test: /\.js$|\.jsx$/,
+        exclude: /(node_modules|.cache|public)/,
+        options: {
+          emitWarning: true,
+          failOnError: false,
+        },
       },
     },
     {
