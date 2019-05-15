@@ -1,21 +1,41 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import { Link, graphql } from 'gatsby';
+import { arrayOf, shape } from 'prop-types';
 
-import Layout from '../components/layout';
-import Image from '../components/image';
-import SEO from '../components/seo';
+import SEO from 'components/Seo';
+import Quottion from 'components/Quotation';
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go bui ld something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
+const IndexPage = ({
+  data: {
+    therapist: { quotations },
+  },
+}) => (
+  <div>
+    <SEO title="" keywords={[`logopeda`, `neurologopeda`, `Toruń`]} />
+    <Quottion data={quotations} />
+    <h1>Logopeda Toruń</h1>
     <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
+  </div>
 );
+
+export const query = graphql`
+  query {
+    therapist {
+      quotations {
+        id
+        text
+        author
+      }
+    }
+  }
+`;
+
+IndexPage.propTypes = {
+  data: shape({
+    therapist: shape({
+      quotations: arrayOf(shape({})),
+    }),
+  }).isRequired,
+};
 
 export default IndexPage;
