@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import home from 'assets/images/home.jpg';
 
-export const StyledWrapper = styled.div`
+export const Container = styled.section`
   padding: 36px;
   width: 100vw;
   height: 100vh;
@@ -9,7 +9,7 @@ export const StyledWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 
   &::before {
     content: '';
@@ -28,16 +28,36 @@ export const StyledWrapper = styled.div`
   }
 `;
 
-export const StyledHeader = styled.h1`
+export const Wrapper = styled.div`
+  position: relative;
+  left: 0;
+
+  ${({ theme }) => theme.mq.desktop} {
+    left: -50px;
+  }
+`;
+
+export const Header = styled.h1`
   font-size: ${({ theme }) => theme.font.size.s};
   color: ${({ theme }) => theme.white};
-  font-weight: 300;
+
   line-height: 1.1;
   display: block;
   margin: 0;
 
   ${({ theme }) => theme.mq.desktop} {
     font-size: ${({ theme }) => theme.font.size.m};
-    position: relative;
+  }
+`;
+
+export const SubHeader = styled.h1`
+  font-size: ${({ theme }) => theme.font.size.xs};
+  color: ${({ theme }) => theme.white};
+  line-height: 1.1;
+  display: block;
+  margin: 0;
+
+  ${({ theme }) => theme.mq.desktop} {
+    font-size: ${({ theme }) => theme.font.size.s};
   }
 `;

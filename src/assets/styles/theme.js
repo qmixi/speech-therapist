@@ -11,10 +11,9 @@ export default {
       xxs: '1.2rem',
       xs: '1.4rem',
       s: '2.6rem',
-      m: '4.2rem',
-      l: '5rem',
-      xl: '7.2rem',
-      xxl: '9.4rem',
+      m: '3.9rem',
+      l: '4.2rem',
+      xl: '5.2rem',
     },
     family: {
       lato: 'Lato, sans-serif',

@@ -1,12 +1,19 @@
 import React from 'react';
 
-import { StyledWrapper, StyledHeader } from './styles';
+import { Profile } from 'types';
+import { Container, Wrapper, Header, SubHeader } from './styles';
 
-const Home = () => (
-  <StyledWrapper>
-    <StyledHeader>Anna Kamińska-Kumorek</StyledHeader>
-    <StyledHeader>Neurologopeda</StyledHeader>
-  </StyledWrapper>
+const Home = ({ profile: { fullName, position } }) => (
+  <Container>
+    <Wrapper>
+      <Header>{fullName}</Header>
+      <SubHeader>{position}</SubHeader>
+    </Wrapper>
+  </Container>
 );
+
+Home.propTypes = {
+  profile: Profile.isRequired,
+};
 
 export default Home;
