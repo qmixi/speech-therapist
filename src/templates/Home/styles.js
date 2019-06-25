@@ -38,26 +38,30 @@ export const Wrapper = styled.div`
 `;
 
 export const Header = styled.h1`
-  font-size: ${({ theme }) => theme.font.size.s};
+  font-size: ${({ theme }) => theme.font.size.m};
   color: ${({ theme }) => theme.white};
 
+  line-height: 1.1;
+  display: block;
+  margin: 0;
+
+  ${({ theme }) => theme.mq.desktop} {
+    font-size: ${({ theme }) => theme.font.size.l};
+  }
+
+  ${({ theme }) => theme.mq.large} {
+    font-size: ${({ theme }) => theme.font.size.xl};
+  }
+`;
+
+export const SubHeader = styled.h2`
+  font-size: ${({ theme }) => theme.font.size.s};
+  color: ${({ theme }) => theme.white};
   line-height: 1.1;
   display: block;
   margin: 0;
 
   ${({ theme }) => theme.mq.desktop} {
     font-size: ${({ theme }) => theme.font.size.m};
-  }
-`;
-
-export const SubHeader = styled.h1`
-  font-size: ${({ theme }) => theme.font.size.xs};
-  color: ${({ theme }) => theme.white};
-  line-height: 1.1;
-  display: block;
-  margin: 0;
-
-  ${({ theme }) => theme.mq.desktop} {
-    font-size: ${({ theme }) => theme.font.size.s};
   }
 `;

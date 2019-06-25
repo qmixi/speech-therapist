@@ -10,10 +10,10 @@ export default {
       xxxs: '.9rem',
       xxs: '1.2rem',
       xs: '1.4rem',
-      s: '2.6rem',
-      m: '3.9rem',
-      l: '4.2rem',
-      xl: '5.2rem',
+      s: '1.8rem',
+      m: '2.6rem',
+      l: '3.9rem',
+      xl: '4.2rem',
     },
     family: {
       lato: 'Lato, sans-serif',
@@ -23,5 +23,6 @@ export default {
   mq: {
     tablet: `@media (min-width: 768px)`,
     desktop: `@media (min-width: 1024px)`,
+    large: `@media (min-width: 1440px)`,
   },
 };
