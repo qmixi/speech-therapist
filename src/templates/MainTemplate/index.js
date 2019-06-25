@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { oneOfType, node, arrayOf } from 'prop-types';
 import { ThemeProvider } from 'styled-components';
 import GlobalStyle from 'assets/styles/GlobalStyle';
 import theme from 'assets/styles/theme';
@@ -12,10 +12,7 @@ const MainTemplate = ({ children }) => (
 );
 
 MainTemplate.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node,
-  ]).isRequired,
+  children: oneOfType([arrayOf(node), node]).isRequired,
 };
 
 export default MainTemplate;

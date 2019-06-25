@@ -4,7 +4,6 @@ import sample from 'lodash/sample';
 
 const Quotation = ({ data }) => {
   const quotation = sample(data);
-  console.log('quotation', quotation);
   return (
     <div>
       <h1>QUOTATION</h1>
