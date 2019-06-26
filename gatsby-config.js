@@ -17,12 +17,21 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Old Standard TT', 'Lato'],
+        },
+      },
+    },
+    {
       resolve: 'gatsby-plugin-root-import',
       options: {
         assets: path.join(__dirname, 'src/assets'),
         components: path.join(__dirname, 'src/components'),
         pages: path.join(__dirname, 'src/pages'),
         templates: path.join(__dirname, 'src/templates'),
+        types: path.join(__dirname, 'src/types'),
         utils: path.join(__dirname, 'src/utils'),
         src: path.join(__dirname, 'src'),
       },
@@ -67,7 +76,6 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/assets/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
