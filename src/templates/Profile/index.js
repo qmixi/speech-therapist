@@ -7,7 +7,6 @@ import ProfileExperiences from 'components/ProfileExperiences';
 import { Container, Avatar, Header } from './styles';
 
 const Profile = ({ profile }) => {
-  console.log('profile', profile);
   return (
     <Container>
       <Header>

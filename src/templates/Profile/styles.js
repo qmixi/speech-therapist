@@ -51,25 +51,3 @@ export const Avatar = styled.div`
     }
   }
 `;
-
-// export const Content = styled.pre`
-//   font-size: ${({ theme }) => theme.font.size.xxs};
-//   color: ${({ theme }) => theme.text};
-//   font-family: ${({ theme }) => theme.font.family.oldStandard};
-//   text-align: center;
-//   line-height: 1.4;
-
-//   ${({ theme }) => theme.mq.desktop} {
-//     font-size: ${({ theme }) => theme.font.size.s};
-//   }
-// `;
-
-export const Title = styled.span`
-  font-size: ${({ theme }) => theme.font.size.xxs};
-  color: ${({ theme }) => theme.text};
-  padding: 20px 0;
-
-  ${({ theme }) => theme.mq.desktop} {
-    font-size: ${({ theme }) => theme.font.size.xs};
-  }
-`;
