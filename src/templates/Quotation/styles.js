@@ -9,10 +9,6 @@ export const Container = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  ${({ theme }) => theme.mq.desktop} {
-    position: relative;
-  }
 `;
 
 export const Content = styled.pre`

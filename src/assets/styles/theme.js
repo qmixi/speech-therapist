@@ -7,9 +7,9 @@ export default {
   elements: '#bbbbbb',
   font: {
     size: {
-      xxxs: '.9rem',
-      xxs: '1.2rem',
-      xs: '1.4rem',
+      xxxs: '0.8rem',
+      xxs: '1.1rem',
+      xs: '1.14rem',
       s: '1.8rem',
       m: '2.6rem',
       l: '3.9rem',
