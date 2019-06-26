@@ -6,6 +6,7 @@ export const Profile = shape({
   phone: string,
   email: string,
   experiences: ProfileExperiences,
+  position: string,
 });
 
 export const ProfileExperience = shape({

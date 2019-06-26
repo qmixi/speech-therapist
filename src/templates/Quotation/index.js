@@ -6,7 +6,6 @@ import { Container, Content, Author } from './styles';
 
 const Quotation = ({ quotations }) => {
   const quotation = sample(quotations);
-  console.log('quotations', quotations);
   return (
     <Container>
       <Content>„{quotation.text}”</Content>
