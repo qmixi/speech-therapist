@@ -7,11 +7,12 @@ import Home from 'templates/Home';
 import Quotation from 'templates/Quotation';
 import Profile from 'templates/Profile';
 import Experiences from 'templates/Experiences';
+import Offers from 'templates/Offers';
 import SEO from 'components/Seo';
 
 const IndexPage = ({
   data: {
-    therapist: { profiles, quotations, experiences },
+    therapist: { profiles, quotations, experiences, offers },
   },
 }) => (
   <MainTemplate>
@@ -21,6 +22,7 @@ const IndexPage = ({
       <Quotation quotations={quotations} />
       <Profile profile={profiles[0]} />
       <Experiences experiences={experiences} />
+      <Offers offers={offers} />
       <Link to="/page-2/">Go to page 2</Link>
     </>
   </MainTemplate>
@@ -53,6 +55,9 @@ export const query = graphql`
       offers {
         id
         title
+        photo {
+          url
+        }
         positions {
           id
           content
