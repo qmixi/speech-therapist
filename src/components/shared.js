@@ -12,13 +12,13 @@ export const Heading = styled.h2`
 `;
 
 export const SubHeading = styled.h3`
-  font-size: ${({ theme }) => theme.font.size.xss};
+  font-size: ${({ theme }) => theme.font.size.xs};
   color: ${({ theme }) => theme.text};
   padding: 10px 0;
   margin: 0;
 
   ${({ theme }) => theme.mq.desktop} {
-    font-size: ${({ theme }) => theme.font.size.xs};
+    font-size: ${({ theme }) => theme.font.size.s};
   }
 `;
 
