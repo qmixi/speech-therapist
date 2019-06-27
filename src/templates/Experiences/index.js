@@ -3,7 +3,10 @@ import React from 'react';
 import { Experiences as ExperiencesType } from 'types';
 import { Heading } from 'components/shared';
 import ExperienceStage from 'components/ExperienceStage';
-import { Container } from './styles';
+import briefcase from 'assets/images/briefcase.svg';
+import microphone from 'assets/images/microphone.svg';
+import globe from 'assets/images/globe.svg';
+import { Container, Header } from './styles';
 
 // Experience Types
 const STUDIES = 'Studies';
@@ -15,15 +18,23 @@ const Experiences = ({ experiences }) => {
   const getExperiences = type => experiences.filter(item => item.type === type);
   return (
     <Container>
-      <Heading>Doświadczenie i Wykształcenie</Heading>
-      <ExperienceStage title="Ukończyłam:" items={getExperiences(STUDIES)} />
+      <Header>
+        <Heading>Doświadczenie i Wykształcenie</Heading>
+      </Header>
+      <ExperienceStage
+        title="Ukończyłam:"
+        items={getExperiences(STUDIES)}
+        icon={globe}
+      />
       <ExperienceStage
         title="Brałam udział w:"
         items={getExperiences(CONFERENCE)}
+        icon={microphone}
       />
       <ExperienceStage
         title="Doświadczenie zawodowe:"
         items={getExperiences(PROFESSIONAL)}
+        icon={briefcase}
       />
     </Container>
   );

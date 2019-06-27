@@ -3,11 +3,9 @@ import { string } from 'prop-types';
 
 import { Experience } from 'types';
 import { SubHeading, List, ListItem } from 'components/shared';
-import { Stage } from './styles';
+import { Stage, StageIcon } from './styles';
 
-const ExperienceStage = ({ title, items }) => {
-  console.log('title', title);
-  console.log('items', items);
+const ExperienceStage = ({ title, items, icon }) => {
   return (
     <Stage>
       <SubHeading>{title}</SubHeading>
@@ -16,6 +14,7 @@ const ExperienceStage = ({ title, items }) => {
           <ListItem key={item.id}>{item.content}</ListItem>
         ))}
       </List>
+      <StageIcon src={icon} width={105} />
     </Stage>
   );
 };
@@ -23,6 +22,7 @@ const ExperienceStage = ({ title, items }) => {
 ExperienceStage.propTypes = {
   title: string.isRequired,
   items: Experience.isRequired,
+  icon: string.isRequired,
 };
 
 export default ExperienceStage;
