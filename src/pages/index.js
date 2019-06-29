@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, graphql } from 'gatsby';
+import { graphql } from 'gatsby';
 import { arrayOf, shape } from 'prop-types';
 
 import MainTemplate from 'templates/MainTemplate';
@@ -8,6 +8,7 @@ import Quotation from 'templates/Quotation';
 import Profile from 'templates/Profile';
 import Experiences from 'templates/Experiences';
 import Offers from 'templates/Offers';
+import Contact from 'templates/Contact';
 import SEO from 'components/Seo';
 
 const IndexPage = ({
@@ -23,7 +24,7 @@ const IndexPage = ({
       <Profile profile={profiles[0]} />
       <Experiences experiences={experiences} />
       <Offers offers={offers} />
-      <Link to="/page-2/">Go to page 2</Link>
+      <Contact profile={profiles[0]} />
     </>
   </MainTemplate>
 );

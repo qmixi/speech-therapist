@@ -1,9 +1,8 @@
 import styled from 'styled-components';
 
 export const Stage = styled.div`
-  padding: 20px 0;
+  padding: 20px 20px;
   min-height: 250px;
-  padding-left: 20px;
   position: relative;
 
   &:nth-child(even) {
@@ -23,13 +22,16 @@ export const Stage = styled.div`
 
 export const StageIcon = styled.div`
   position: relative;
-  width: 105px;
-  height: 105px;
+  width: 75px;
+  height: 75px;
   background-image: url(${({ src }) => src});
   background-size: 100%;
   transition: all 0.2s ease-out;
+  margin: auto;
 
   ${({ theme }) => theme.mq.desktop} {
+    width: 105px;
+    height: 105px;
     position: absolute;
     right: 10%;
     top: 50%;

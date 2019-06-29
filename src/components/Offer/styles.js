@@ -6,9 +6,12 @@ export const Wrapper = styled.div`
   background-color: black;
   overflow: hidden;
   cursor: pointer;
+  text-align: center;
+  padding: 20px;
 
   ${({ theme }) => theme.mq.desktop} {
     min-height: 540px;
+    text-align: left;
   }
 
   &::before {
@@ -53,7 +56,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Title = styled.pre`
-  font-size: ${({ theme }) => theme.font.size.m};
+  font-size: ${({ theme }) => theme.font.size.s};
   opacity: 0.8;
   position: relative;
   font-family: ${({ theme }) => theme.font.family.oldStandard};
