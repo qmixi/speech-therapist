@@ -3,13 +3,12 @@ import home from 'assets/images/home.jpg';
 
 export const Container = styled.section`
   padding: 36px;
-  width: 100vw;
-  height: 100vh;
   background-color: black;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 
   &::before {
     content: '';
@@ -24,21 +23,24 @@ export const Container = styled.section`
   }
 
   ${({ theme }) => theme.mq.desktop} {
-    position: relative;
+    width: 100vw;
+    height: 100vh;
   }
 `;
 
 export const Wrapper = styled.div`
   position: relative;
   left: 0;
+  text-align: center;
 
   ${({ theme }) => theme.mq.desktop} {
     left: -50px;
+    text-align: left;
   }
 `;
 
 export const Header = styled.h1`
-  font-size: ${({ theme }) => theme.font.size.m};
+  font-size: ${({ theme }) => theme.font.size.s};
   color: ${({ theme }) => theme.white};
 
   line-height: 1.1;

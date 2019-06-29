@@ -1,8 +1,13 @@
 import { shape, string, arrayOf } from 'prop-types';
 
+const Photo = shape({
+  url: string,
+});
+
 export const Offer = shape({
   id: string,
   title: string,
+  photo: Photo,
   positions: OfferPositions,
 });
 

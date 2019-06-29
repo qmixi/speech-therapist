@@ -10,9 +10,9 @@ export default {
       xxxs: '0.8rem',
       xxs: '1.1rem',
       xs: '1.14rem',
-      s: '1.8rem',
+      s: '1.6rem',
       m: '2.6rem',
-      l: '3.9rem',
+      l: '3.5rem',
       xl: '4.2rem',
     },
     family: {

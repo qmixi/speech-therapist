@@ -12,22 +12,24 @@ export const Heading = styled.h2`
 `;
 
 export const SubHeading = styled.h3`
-  font-size: ${({ theme }) => theme.font.size.xss};
+  font-size: ${({ theme }) => theme.font.size.xs};
   color: ${({ theme }) => theme.text};
   padding: 10px 0;
   margin: 0;
 
   ${({ theme }) => theme.mq.desktop} {
-    font-size: ${({ theme }) => theme.font.size.xs};
+    font-size: ${({ theme }) => theme.font.size.s};
   }
 `;
 
 export const LightText = styled.h2`
   color: ${({ theme }) => theme.text_light};
   font-size: ${({ theme }) => theme.font.size.xxxs};
+  text-align: center;
 
   ${({ theme }) => theme.mq.desktop} {
     font-size: ${({ theme }) => theme.font.size.xxs};
+    text-align: left;
   }
 `;
 
@@ -35,6 +37,8 @@ export const List = styled.ul`
   padding: 10px;
   line-height: 1.3;
   margin: 0;
+  position: relative;
+  z-index: 2;
 `;
 
 export const ListItem = styled.li`
