@@ -25,9 +25,11 @@ export const SubHeading = styled.h3`
 export const LightText = styled.h2`
   color: ${({ theme }) => theme.text_light};
   font-size: ${({ theme }) => theme.font.size.xxxs};
+  text-align: center;
 
   ${({ theme }) => theme.mq.desktop} {
     font-size: ${({ theme }) => theme.font.size.xxs};
+    text-align: left;
   }
 `;
 
@@ -35,6 +37,8 @@ export const List = styled.ul`
   padding: 10px;
   line-height: 1.3;
   margin: 0;
+  position: relative;
+  z-index: 2;
 `;
 
 export const ListItem = styled.li`

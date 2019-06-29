@@ -14,7 +14,6 @@ const CONFERENCE = 'Conference';
 const PROFESSIONAL = 'Professional';
 
 const Experiences = ({ experiences }) => {
-  console.log('experiences', experiences);
   const getExperiences = type => experiences.filter(item => item.type === type);
   return (
     <Container>

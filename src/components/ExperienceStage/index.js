@@ -1,7 +1,7 @@
 import React from 'react';
 import { string } from 'prop-types';
 
-import { Experience } from 'types';
+import { Experiences } from 'types';
 import { SubHeading, List, ListItem } from 'components/shared';
 import { Stage, StageIcon } from './styles';
 
@@ -21,7 +21,7 @@ const ExperienceStage = ({ title, items, icon }) => {
 
 ExperienceStage.propTypes = {
   title: string.isRequired,
-  items: Experience.isRequired,
+  items: Experiences.isRequired,
   icon: string.isRequired,
 };
 

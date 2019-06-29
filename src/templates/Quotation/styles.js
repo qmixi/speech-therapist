@@ -5,10 +5,14 @@ export const Container = styled.section`
   width: 100vw;
   height: 100vh;
   background-color: ${({ theme }) => theme.gray};
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  display: none;
+
+  ${({ theme }) => theme.mq.desktop} {
+    display: flex;
+  }
 `;
 
 export const Content = styled.pre`

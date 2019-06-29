@@ -5,7 +5,6 @@ import Offer from 'components/Offer';
 import { Container, Item } from './styles';
 
 const Offers = ({ offers }) => {
-  console.log('offers', offers);
   const isFullWidth = index => index === 0 && offers.length % 2 === 1;
   return (
     <Container>
