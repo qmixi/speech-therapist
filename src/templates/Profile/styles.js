@@ -22,32 +22,33 @@ export const Avatar = styled.div`
   background-position: center -30px;
   margin: auto;
 
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    width: calc(50% - 100px);
+    top: 50%;
+    height: 1px;
+    display: block;
+    background-color: ${({ theme }) => theme.text_light};
+    transform: translateY(-50%);
+  }
+
+  &::before {
+    left: 20px;
+  }
+
+  &::after {
+    right: 20px;
+  }
+
   ${({ theme }) => theme.mq.desktop} {
     width: 180px;
     height: 180px;
 
-    &::before {
-      content: '';
-      position: absolute;
-      width: calc(50% - 140px);
-      top: 50%;
-      height: 1px;
-      display: block;
-      background-color: ${({ theme }) => theme.text_light};
-      left: 20px;
-      transform: translateY(-50%);
-    }
-
+    &::before,
     &::after {
-      content: '';
-      position: absolute;
       width: calc(50% - 140px);
-      top: 50%;
-      height: 1px;
-      display: block;
-      background-color: ${({ theme }) => theme.text_light};
-      right: 20px;
-      transform: translateY(-50%);
     }
   }
 `;
