@@ -10,6 +10,7 @@ import Experiences from 'templates/Experiences';
 import Offers from 'templates/Offers';
 import Contact from 'templates/Contact';
 import SEO from 'components/Seo';
+import { ModalProvider } from 'components/Modal';
 
 const IndexPage = ({
   data: {
@@ -17,7 +18,7 @@ const IndexPage = ({
   },
 }) => (
   <MainTemplate>
-    <>
+    <ModalProvider>
       <SEO title="" keywords={[`logopeda`, `neurologopeda`, `Toruń`]} />
       <Home profile={profiles[0]} />
       <Quotation quotations={quotations} />
@@ -25,7 +26,7 @@ const IndexPage = ({
       <Experiences experiences={experiences} />
       <Offers offers={offers} />
       <Contact profile={profiles[0]} />
-    </>
+    </ModalProvider>
   </MainTemplate>
 );
 
