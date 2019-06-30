@@ -1,11 +1,11 @@
 import React from 'react';
-import { string } from 'prop-types';
+import { string, func } from 'prop-types';
 
 import { MenuItem as MenuItemStyled, MenuItemSub } from './styles';
 
-const MenuItem = ({ text }) => {
+const MenuItem = ({ text, onClick }) => {
   return (
-    <MenuItemStyled>
+    <MenuItemStyled onClick={onClick}>
       <MenuItemSub>{text}</MenuItemSub>
       <MenuItemSub>{text}</MenuItemSub>
     </MenuItemStyled>
@@ -14,6 +14,7 @@ const MenuItem = ({ text }) => {
 
 MenuItem.propTypes = {
   text: string.isRequired,
+  onClick: func.isRequired,
 };
 
 export default MenuItem;

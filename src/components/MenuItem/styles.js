@@ -7,7 +7,7 @@ export const MenuItem = styled.a`
   position: relative;
   background-color: ${({ theme }) => theme.white};
   left: 0px;
-  font-size: ${({ theme }) => theme.font.size.l};
+  font-size: ${({ theme }) => theme.font.size.m};
   transition: all 0.5s cubic-bezier(0.35, 0.74, 0.16, 0.98);
 
   &:hover {
@@ -22,6 +22,10 @@ export const MenuItem = styled.a`
         width: 100%;
       }
     }
+  }
+
+  ${({ theme }) => theme.mq.desktop} {
+    font-size: ${({ theme }) => theme.font.size.l};
   }
 `;
 

@@ -109,5 +109,9 @@ export const MenuItems = styled.ul`
   position: absolute;
   top: 50%;
   right: 110px;
-  transform: translateY(-50%);
+  transform: translateY(-60%);
+
+  ${({ theme }) => theme.mq.desktop} {
+    transform: translate(0, -50%);
+  }
 `;
