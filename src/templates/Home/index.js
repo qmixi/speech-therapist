@@ -4,7 +4,7 @@ import { Profile } from 'types';
 import { Container, Wrapper, Header, SubHeader } from './styles';
 
 const Home = ({ profile: { fullName, position } }) => (
-  <Container>
+  <Container id="home">
     <Wrapper>
       <Header>{fullName}</Header>
       <SubHeader>{position}</SubHeader>

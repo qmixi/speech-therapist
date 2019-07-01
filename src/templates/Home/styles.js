@@ -34,7 +34,7 @@ export const Wrapper = styled.div`
   text-align: center;
 
   ${({ theme }) => theme.mq.desktop} {
-    left: -50px;
+    left: -110px;
     text-align: left;
   }
 `;
