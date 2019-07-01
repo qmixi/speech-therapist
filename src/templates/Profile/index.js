@@ -8,7 +8,7 @@ import { Container, Avatar, Header } from './styles';
 
 const Profile = ({ profile }) => {
   return (
-    <Container>
+    <Container id="profile">
       <Header>
         <Avatar />
       </Header>

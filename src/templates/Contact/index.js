@@ -6,7 +6,7 @@ import { Title, Wrapper, Link, Info } from './styles';
 const Contact = ({ profile }) => {
   return (
     <>
-      <Wrapper>
+      <Wrapper id="contact">
         <Title>Zapraszam do gabinetu</Title>
         <Link href={`mailto:${profile.email}`}>{profile.email}</Link>
         <br />
