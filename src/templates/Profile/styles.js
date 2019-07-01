@@ -19,7 +19,7 @@ export const Avatar = styled.div`
   border-radius: 50%;
   background: url(${avatar});
   background-size: cover;
-  background-position: center -30px;
+  background-position: center -12px;
   margin: auto;
 
   &::before,
@@ -45,6 +45,7 @@ export const Avatar = styled.div`
   ${({ theme }) => theme.mq.desktop} {
     width: 180px;
     height: 180px;
+    background-position: center -30px;
 
     &::before,
     &::after {

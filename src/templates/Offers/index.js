@@ -7,7 +7,7 @@ import { Container, Item } from './styles';
 const Offers = ({ offers }) => {
   const isFullWidth = index => index === 0 && offers.length % 2 === 1;
   return (
-    <Container>
+    <Container id="offers">
       {offers.map((offer, index) => (
         <Item key={offer.id} fullWidth={isFullWidth(index)}>
           <Offer offer={offer} />
