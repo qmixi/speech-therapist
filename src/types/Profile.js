@@ -3,6 +3,7 @@ import { shape, string, arrayOf } from 'prop-types';
 export const Profile = shape({
   fullName: string,
   bio: string,
+  city: string,
   phone: string,
   email: string,
   experiences: ProfileExperiences,

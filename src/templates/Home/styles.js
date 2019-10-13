@@ -1,29 +1,15 @@
 import styled from 'styled-components';
-import home from 'assets/images/home.jpg';
+import BackgroundImage from 'gatsby-background-image';
 
-export const Container = styled.section`
+export const Container = styled(BackgroundImage)`
   padding: 36px;
-  background-color: black;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
 
-  &::before {
-    content: '';
-    left: 0;
-    top: 0;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-image: url(${home});
-    background-size: cover;
-    opacity: 0.7;
-  }
-
   ${({ theme }) => theme.mq.desktop} {
-    width: 100vw;
     height: 100vh;
   }
 `;

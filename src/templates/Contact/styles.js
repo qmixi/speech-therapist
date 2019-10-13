@@ -44,3 +44,15 @@ export const Info = styled.section`
     padding: 50px 20px;
   }
 `;
+
+export const Text = styled.span`
+  color: ${({ theme }) => theme.white};
+  opacity: 0.8;
+  font-size: ${({ theme }) => theme.font.size.xxs};
+
+  ${({ theme }) => theme.mq.desktop} {
+    margin-top: 20px;
+    display: inline-block;
+    font-size: ${({ theme }) => theme.font.size.xs};
+  }
+`;

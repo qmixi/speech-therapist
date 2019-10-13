@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const Container = styled.section`
   padding: 15px;
-  width: 100vw;
   height: 100vh;
   background-color: ${({ theme }) => theme.gray};
   flex-direction: column;
