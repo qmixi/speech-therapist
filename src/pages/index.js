@@ -15,12 +15,13 @@ import { ModalProvider } from 'components/Modal';
 const IndexPage = ({
   data: {
     therapist: { profiles, quotations, experiences, offers },
+    file,
   },
 }) => (
   <MainTemplate>
     <ModalProvider>
       <SEO title="" keywords={[`logopeda`, `neurologopeda`, `Toruń`]} />
-      <Home profile={profiles[0]} />
+      <Home profile={profiles[0]} file={file} />
       <Quotation quotations={quotations} />
       <Profile profile={profiles[0]} />
       <Experiences experiences={experiences} />
@@ -41,6 +42,7 @@ export const query = graphql`
       profiles {
         fullName
         bio
+        city
         phone
         email
         position
@@ -66,6 +68,13 @@ export const query = graphql`
         }
       }
     }
+    file(relativePath: { eq: "home.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 2000, quality: 100) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
   }
 `;
 
@@ -74,6 +83,7 @@ IndexPage.propTypes = {
     therapist: shape({
       quotations: arrayOf(shape({})),
     }),
+    file: shape({}),
   }).isRequired,
 };
 
