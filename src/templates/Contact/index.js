@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Profile } from 'types';
-import { Title, Wrapper, Link, Info } from './styles';
+import { Title, Text, Wrapper, Link, Info } from './styles';
 
 const Contact = ({ profile }) => {
   return (
@@ -11,6 +11,8 @@ const Contact = ({ profile }) => {
         <Link href={`mailto:${profile.email}`}>{profile.email}</Link>
         <br />
         <Link href={`tel:${profile.phone}`}>{profile.phone}</Link>
+        <br />
+        <Text>{profile.city}</Text>
       </Wrapper>
       <Info>
         Jeśli mają Państwo jakiekolwiek pytania lub chcą zarezerwować wizytę,
