@@ -4,6 +4,13 @@ const Photo = shape({
   url: string,
 });
 
+export const OfferPosition = shape({
+  id: string,
+  content: string,
+});
+
+export const OfferPositions = arrayOf(OfferPosition);
+
 export const Offer = shape({
   id: string,
   title: string,
@@ -12,10 +19,3 @@ export const Offer = shape({
 });
 
 export const Offers = arrayOf(Offer);
-
-export const OfferPosition = shape({
-  id: string,
-  content: string,
-});
-
-export const OfferPositions = arrayOf(OfferPosition);
