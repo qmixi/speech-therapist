@@ -1,5 +1,12 @@
 import { shape, string, arrayOf } from 'prop-types';
 
+export const ProfileExperience = shape({
+  id: string,
+  content: string,
+});
+
+export const ProfileExperiences = arrayOf(ProfileExperience);
+
 export const Profile = shape({
   fullName: string,
   bio: string,
@@ -9,10 +16,3 @@ export const Profile = shape({
   experiences: ProfileExperiences,
   position: string,
 });
-
-export const ProfileExperience = shape({
-  id: string,
-  content: string,
-});
-
-export const ProfileExperiences = arrayOf(ProfileExperience);
