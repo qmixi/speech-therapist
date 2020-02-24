@@ -27,8 +27,6 @@ function SEO({ description, lang, meta, title }) {
     `
   );
 
-  console.log('keywords1', site);
-
   const metaDescription = description || site.siteMetadata.description;
   return (
     <Helmet
