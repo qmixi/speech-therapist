@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Piotr Kumorek <contact.piotrkumorek@gmail.com>",
   "dependencies": {
+    "babel-eslint": "^10.0.3",
     "babel-plugin-styled-components": "^1.10.0",
     "gatsby": "^2.4.3",
     "gatsby-background-image": "^0.8.19",

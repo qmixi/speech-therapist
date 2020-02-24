@@ -20,7 +20,7 @@ const IndexPage = ({
 }) => (
   <MainTemplate>
     <ModalProvider>
-      <SEO title="" keywords={[`logopeda`, `neurologopeda`, `Toruń`]} />
+      <SEO />
       <Home profile={profiles[0]} file={file} />
       <Quotation quotations={quotations} />
       <Profile profile={profiles[0]} />
@@ -40,6 +40,9 @@ export const query = graphql`
         author
       }
       profiles {
+        avatar {
+          url
+        }
         fullName
         bio
         city

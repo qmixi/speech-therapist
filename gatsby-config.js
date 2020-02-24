@@ -2,9 +2,25 @@ const path = require('path');
 
 module.exports = {
   siteMetadata: {
-    title: `Neurologopeda - strona oficjalna`,
-    description: `Neurologopeda - strona oficjalna`,
+    title: `Neurologopeda - Anna Kamińska-Kumorek`,
+    description: `Oferuję profesjonalną diagnostykę oraz kompleksową terapię logopedyczną i neurologopedyczną. Zadzwoń aby umówić wizytę.`,
     author: `@qmixi`,
+    keywords: [
+      'gabinet logopedyczny',
+      'logopeda dziecięcy',
+      'logopeda toruń',
+      'logopedii',
+      'opóźniony rozwój mowy',
+      'terapia zaburzeń mowy',
+      'wady wymowy',
+      'otępienie czołowo-skroniowe',
+      'neurologopeda toruń',
+      'gabinet logopedyczny',
+      'opóźniony rozwój mowy',
+      'terapia zaburzeń mowy',
+      'wady wymowy',
+    ],
+    image: path.join(__dirname, 'src/assets/images/logopeda.png'),
   },
   plugins: [
     {
