@@ -1,5 +1,9 @@
 import { shape, string, arrayOf } from 'prop-types';
 
+const Photo = shape({
+  url: string,
+});
+
 export const ProfileExperience = shape({
   id: string,
   content: string,
@@ -15,4 +19,5 @@ export const Profile = shape({
   email: string,
   experiences: ProfileExperiences,
   position: string,
+  avatar: Photo,
 });

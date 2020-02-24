@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import avatar from 'assets/images/avatar.jpg';
 
 export const Container = styled.section`
   padding: 15px;
@@ -17,9 +16,9 @@ export const Avatar = styled.div`
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background: url(${avatar});
+  background: url(${props => props.url});
   background-size: cover;
-  background-position: center -12px;
+  background-position: center;
   margin: auto;
 
   &::before,
@@ -45,7 +44,6 @@ export const Avatar = styled.div`
   ${({ theme }) => theme.mq.desktop} {
     width: 180px;
     height: 180px;
-    background-position: center -30px;
 
     &::before,
     &::after {

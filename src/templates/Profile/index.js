@@ -10,7 +10,7 @@ const Profile = ({ profile }) => {
   return (
     <Container id="profile">
       <Header>
-        <Avatar />
+        <Avatar url={profile.avatar.url} />
       </Header>
       <Heading>O mnie:</Heading>
       <Bio profile={profile} />
