@@ -20,7 +20,7 @@ module.exports = {
       'terapia zaburzeń mowy',
       'wady wymowy',
     ],
-    image: 'images/logopeda.png',
+    image: '/images/logopeda.png',
   },
   plugins: [
     {
