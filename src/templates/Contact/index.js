@@ -7,7 +7,7 @@ const Contact = ({ profile }) => {
   return (
     <>
       <Wrapper id="contact">
-        <Title>Zapraszam do gabinetu</Title>
+        <Title>Zapraszam do gabinetu lub na zajęcia online</Title>
         <Link href={`mailto:${profile.email}`}>{profile.email}</Link>
         <br />
         <Link href={`tel:${profile.phone}`}>{profile.phone}</Link>
