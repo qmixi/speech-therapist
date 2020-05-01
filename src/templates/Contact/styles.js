@@ -11,13 +11,13 @@ export const Wrapper = styled.section`
 `;
 
 export const Title = styled.h3`
-  font-size: ${({ theme }) => theme.font.size.s};
+  font-size: ${({ theme }) => theme.font.size.xs};
   color: ${({ theme }) => theme.white};
   line-height: 1.4;
   margin: 0;
 
   ${({ theme }) => theme.mq.desktop} {
-    font-size: ${({ theme }) => theme.font.size.xl};
+    font-size: ${({ theme }) => theme.font.size.m};
     padding-bottom: 30px;
   }
 `;
