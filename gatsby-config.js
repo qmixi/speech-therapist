@@ -2,8 +2,8 @@ const path = require('path');
 
 module.exports = {
   siteMetadata: {
-    title: `Neurologopeda - Anna Kamińska-Kumorek`,
-    description: `Oferuję profesjonalną diagnostykę oraz kompleksową terapię logopedyczną i neurologopedyczną. Zadzwoń aby umówić wizytę.`,
+    title: `Logopeda/neurologopeda - terapia zdalna i stacjonarna`,
+    description: `Oferuję profesjonalną diagnostykę oraz kompleksową terapię logopedyczną i neurologopedyczną. Zapraszam do kontaktu.`,
     author: `@qmixi`,
     keywords: [
       'gabinet logopedyczny',
@@ -19,6 +19,11 @@ module.exports = {
       'opóźniony rozwój mowy',
       'terapia zaburzeń mowy',
       'wady wymowy',
+      'zdalnie',
+      'zajęcia online',
+      'online',
+      'logopeda zdalnie',
+      'terapia zdalnie',
     ],
     image: '/images/logopeda.png',
   },
